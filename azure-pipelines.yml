@@ -13,7 +13,7 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-jobs:
+Jobs :
 - job: Build
   strategy:
     matrix:
@@ -24,7 +24,7 @@ jobs:
       Python37:
         PYTHON_VERSION: '3.7'
     maxParallel: 1
-    
+
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
